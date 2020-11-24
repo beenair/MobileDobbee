@@ -1,0 +1,12 @@
+{
+  "name": "dobbee",
+  "displayName": "dobbee",
+  "expo": {
+    "name": "dobbee",
+    "slug": "dobbee",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
