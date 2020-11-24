@@ -1,17 +1,27 @@
 import React from 'react';
-import { Alert, Button, Image, StyleSheet, Text, View } from 'react-native';
+import { Button, Image, StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
+export default ({ history }) => {
 
-    <View style={styles.container}>
-      <Image source={require('./src/icons/dobby.jpg')}/>
-      <Text style={styles.text}>Soyez les bienvenus Moldus !!</Text>
-      <Button title="En avant" onPress={()=>Alert.alert("C'est parti !!")}/>
-    </View>
+  
 
-  );
+    return (
+      
+      <View style={styles.container}>
+
+        <Image source={require('../src/icons/dobby.jpg')}/>
+        <Text style={styles.text}>Soyez les bienvenus Moldus !!</Text>
+
+        <Button
+          title="En avant" onPress={()=>history.push("/chat")}
+        />
+      
+      </View>
+
+    );
+  
 }
+
 
 const styles = StyleSheet.create({
   container: {
